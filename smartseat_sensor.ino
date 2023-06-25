@@ -71,11 +71,11 @@ void loop() {
     
     if(distanceCm < 24){
         Serial.println(distanceCm);
-        socketIO.emit("statusCode", "\"LB-501_Empty\"");
+        socketIO.emit("statusCode", "\"Area 5B_LB-501_Empty\"");
     
     }else{
        Serial.println(distanceCm);
-       socketIO.emit("statusCode", "\"LB-501_Detected\"");
+       socketIO.emit("statusCode", "\"Area 5B_LB-501_Detected\"");
     
     }
 
